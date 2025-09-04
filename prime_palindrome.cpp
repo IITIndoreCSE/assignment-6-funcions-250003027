@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+//Function to check if a number is prime
 bool isPrime(int n) {
     // TODO: complete the function as per instructions
     if (n < 2) return false;
@@ -14,6 +15,7 @@ bool isPrime(int n) {
     return true;
 }
 
+//Function to check if a number is palindrome
 bool isPalindrome(int n) {
     // TODO: complete the function as per instructions
 int original = n, reversed = 0;
@@ -24,6 +26,7 @@ int original = n, reversed = 0;
     return original == reversed;
 }
 
+//Function to check if number is both prime and palindrome
 bool primePalindrome(int n) {
     // TODO: complete the function as per instructions
     return isPrime(n) && isPalindrome(n);
